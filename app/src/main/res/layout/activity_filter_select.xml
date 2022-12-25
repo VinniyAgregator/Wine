@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Fil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E6E6"
+    android:backgroundTint="#EDE4E4"
+    tools:context=".FilterSelect">
+
+
+    <TextView
+        android:id="@+id/param"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Выберите параметр сортировки"
+        android:textColor="#7D54AB"
+        android:textColorHighlight="#660505"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/country"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="68dp"
+        android:onClick="goCountry"
+        android:text="Страна производства"
+        app:layout_constraintEnd_toEndOf="@+id/param"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/param"
+        app:layout_constraintTop_toBottomOf="@+id/param" />
+
+    <Button
+        android:id="@+id/fortress"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:onClick="goFortress"
+        android:text="Крепость"
+        app:layout_constraintEnd_toEndOf="@+id/country"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/country"
+        app:layout_constraintTop_toBottomOf="@+id/country" />
+
+    <Button
+        android:id="@+id/capacity"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:onClick="goCapacity"
+        android:text="Объём"
+        app:layout_constraintEnd_toEndOf="@+id/fortress"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/fortress"
+        app:layout_constraintTop_toBottomOf="@+id/fortress" />
+
+    <Button
+        android:id="@+id/sugar"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:onClick="goSugar"
+        android:text="Содержание сахара"
+        app:layout_constraintEnd_toEndOf="@+id/capacity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/capacity"
+        app:layout_constraintTop_toBottomOf="@+id/capacity" />
+
+    <Button
+        android:id="@+id/brand"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:onClick="goBrand"
+        android:text="Цвет"
+        app:layout_constraintEnd_toEndOf="@+id/sugar"
+        app:layout_constraintStart_toStartOf="@+id/sugar"
+        app:layout_constraintTop_toBottomOf="@+id/sugar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
